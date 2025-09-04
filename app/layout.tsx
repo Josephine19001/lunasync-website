@@ -19,6 +19,9 @@ export const metadata: Metadata = {
   authors: [{ name: "LunaSync" }],
   creator: "LunaSync",
   publisher: "LunaSync",
+  icons: {
+    icon: "/favicon.png",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",

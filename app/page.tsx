@@ -105,7 +105,39 @@ export default function Home() {
               <div className="flex">{appleLink}</div>
             </div>
           </div>
-          <div className="flex justify-center">
+          {/* Mobile: Simple horizontal layout */}
+          <div className="flex justify-center items-center gap-2 px-4 sm:hidden">
+            <div className="transform rotate-3">
+              <Image
+                src="/images/app-screenshots/sports.png"
+                alt="LunaSync App Screenshot 1"
+                width={80}
+                height={160}
+                className="w-20 h-auto rounded-lg"
+              />
+            </div>
+            <div className="z-10">
+              <Image
+                src="/images/app-screenshots/nutrition.png"
+                alt="LunaSync App Screenshot 2"
+                width={120}
+                height={240}
+                className="w-28 h-auto"
+              />
+            </div>
+            <div className="transform -rotate-3">
+              <Image
+                src="/images/app-screenshots/period.png"
+                alt="LunaSync App Screenshot 3"
+                width={80}
+                height={160}
+                className="w-20 h-auto rounded-lg"
+              />
+            </div>
+          </div>
+
+          {/* Desktop: Overlapping layout */}
+          <div className="hidden sm:flex justify-center">
             <div className="relative w-full max-w-2xl h-[600px]">
               {/* Left background image */}
               <div className="absolute left-0 top-20 z-10 transform rotate-12">
@@ -114,7 +146,7 @@ export default function Home() {
                   alt="LunaSync App Screenshot 1"
                   width={160}
                   height={320}
-                  className="w-full h-auto rounded-2xl"
+                  className="w-32 lg:w-40 h-auto rounded-2xl"
                 />
               </div>
 
@@ -125,7 +157,7 @@ export default function Home() {
                   alt="LunaSync App Screenshot 2"
                   width={280}
                   height={560}
-                  className="w-full h-auto"
+                  className="w-56 lg:w-70 h-auto"
                 />
               </div>
 
@@ -136,7 +168,7 @@ export default function Home() {
                   alt="LunaSync App Screenshot 3"
                   width={160}
                   height={320}
-                  className="w-full h-auto rounded-2xl"
+                  className="w-32 lg:w-40 h-auto rounded-2xl"
                 />
               </div>
             </div>

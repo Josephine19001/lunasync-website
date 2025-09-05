@@ -61,24 +61,47 @@ export default function Home() {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-20 items-center">
           <div className="space-y-12">
-            <div className="space-y-6">
+            <div className="space-y-8">
               <div className="text-gray-800 leading-none tracking-tight">
                 <div className="space-y-2">
-                  <h1 className="text-5xl font-semibold">Your health</h1>
+                  <h1 className="text-5xl font-semibold">Your body changes</h1>
                   <h2 className="text-4xl font-medium">
-                    is more than calories & workouts
+                    every month—LunaSync adapts with you
                   </h2>
                 </div>
               </div>
-              <p className="text-lg text-gray-600 font-light leading-relaxed max-w-lg">
-                It&apos;s like{' '}
-                <span className="font-medium text-[#EC4899]">
-                  Flo + Cal AI + MyFitnessPal
-                </span>{' '}
-                combined! LunaSync is the AI-powered women&apos;s health app
-                that helps you sync your nutrition, workouts, and cycle in one
-                place.
-              </p>
+              <div className="space-y-4">
+                <p className="text-lg text-gray-600 font-light leading-relaxed max-w-lg">
+                  Not just another diet or period tracker. Think{' '}
+                  <span className="font-medium text-[#EC4899]">
+                    Flo + MyFitnessPal + Cal AI
+                  </span>
+                  —but built for the girlies.
+                </p>
+                
+                <div className="space-y-3 text-gray-700 max-w-lg">
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-[#EC4899] rounded-full mt-2 flex-shrink-0"></div>
+                    <p className="text-sm">Snap your meals or log them—we&apos;ll estimate calories & macros (no diet obsession, just balance).</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-[#EC4899] rounded-full mt-2 flex-shrink-0"></div>
+                    <p className="text-sm">Choose your workout focus (glutes, abs, splits) + location (mat at home or mountain hike—we got you).</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-[#EC4899] rounded-full mt-2 flex-shrink-0"></div>
+                    <p className="text-sm">Cycle-aware workouts that flex with your energy (cramps, fatigue, or beast mode).</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-[#EC4899] rounded-full mt-2 flex-shrink-0"></div>
+                    <p className="text-sm">Period & fertility tracking with smart predictions.</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-[#EC4899] rounded-full mt-2 flex-shrink-0"></div>
+                    <p className="text-sm">Insights that connect fitness, food, and hormones.</p>
+                  </div>
+                </div>
+              </div>
               <div className="flex">{appleLink}</div>
             </div>
           </div>

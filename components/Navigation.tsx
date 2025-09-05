@@ -48,9 +48,9 @@ const Navigation = () => {
           <Link href="/privacy" className="text-gray-700">
             Privacy
           </Link>
-          <a href="mailto:team@lunasync.app" className="text-gray-700">
+          <Link href="/contact" className="text-gray-700">
             Contact
-          </a>
+          </Link>
         </div>
 
         {/* Mobile Menu Button & App Store Link */}
@@ -106,13 +106,13 @@ const Navigation = () => {
             >
               Privacy
             </Link>
-            <a
-              href="mailto:team@lunasync.app"
+            <Link
+              href="/contact"
               className="block text-gray-700 hover:text-[#EC4899] transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Contact
-            </a>
+            </Link>
           </div>
         </div>
       )}

@@ -1,5 +1,42 @@
 import Image from 'next/image';
 import Navigation from '../components/Navigation';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title:
+    "LunaSync - AI Women's Health App | Better than Flo + MyFitnessPal + Cal AI Combined",
+  description:
+    "LunaSync is the AI-powered women's health app that combines period tracking like Flo, nutrition like MyFitnessPal, and smart AI like Cal AI. Sync your cycle, workouts, and nutrition in one app.",
+  keywords:
+    "women's health app, period tracker like Flo, nutrition app like MyFitnessPal, AI health coach like Cal AI, cycle tracking, fertility tracker, calorie counter, workout planner, hormone tracking",
+  openGraph: {
+    title: "LunaSync - The Ultimate Women's Health App",
+    description:
+      "It's like Flo + Cal AI + MyFitnessPal combined! AI-powered period tracking, nutrition, and fitness all in one app.",
+    url: 'https://lunasync.app',
+    siteName: 'LunaSync',
+    images: [
+      {
+        url: '/images/app-screenshots/nutrition.png',
+        width: 280,
+        height: 560,
+        alt: 'LunaSync App Screenshot'
+      }
+    ],
+    locale: 'en_US',
+    type: 'website'
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "LunaSync - AI Women's Health App",
+    description:
+      'Like Flo + MyFitnessPal + Cal AI combined! Track your cycle, nutrition, and workouts with AI.',
+    images: ['/images/app-screenshots/nutrition.png']
+  },
+  alternates: {
+    canonical: 'https://lunasync.app'
+  }
+};
 
 export default function Home() {
   const appleLink = (
@@ -34,8 +71,13 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-lg text-gray-600 font-light leading-relaxed max-w-lg">
-                LunaSync is the AI-powered women&apos;s health app that helps
-                you sync your nutrition, workouts, and cycle.
+                It&apos;s like{' '}
+                <span className="font-medium text-[#EC4899]">
+                  Flo + Cal AI + MyFitnessPal
+                </span>{' '}
+                combined! LunaSync is the AI-powered women&apos;s health app
+                that helps you sync your nutrition, workouts, and cycle in one
+                place.
               </p>
               <div className="flex">{appleLink}</div>
             </div>
@@ -45,7 +87,7 @@ export default function Home() {
               {/* Left background image */}
               <div className="absolute left-0 top-20 z-10 transform rotate-12">
                 <Image
-                  src="/images/app-screenshots/5.png"
+                  src="/images/app-screenshots/sports.png"
                   alt="LunaSync App Screenshot 1"
                   width={160}
                   height={320}
@@ -67,7 +109,7 @@ export default function Home() {
               {/* Right background image */}
               <div className="absolute right-0 top-20 z-20 transform -rotate-12">
                 <Image
-                  src="/images/app-screenshots/3.png"
+                  src="/images/app-screenshots/period.png"
                   alt="LunaSync App Screenshot 3"
                   width={160}
                   height={320}

@@ -1,4 +1,21 @@
 import Navigation from '../../components/Navigation';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Privacy Policy - LunaSync AI Women\'s Health App',
+  description: 'Privacy Policy for LunaSync, the secure AI-powered women\'s health app. Learn how we protect your period tracking, nutrition, and fitness data.',
+  keywords: 'LunaSync privacy policy, women\'s health app privacy, period tracker privacy, AI health app security, fitness app data protection',
+  openGraph: {
+    title: 'LunaSync Privacy Policy',
+    description: 'Privacy Policy for LunaSync AI-powered women\'s health app.',
+    url: 'https://lunasync.app/privacy',
+    siteName: 'LunaSync',
+    type: 'website',
+  },
+  alternates: {
+    canonical: 'https://lunasync.app/privacy',
+  },
+};
 
 export default function Privacy() {
   return (

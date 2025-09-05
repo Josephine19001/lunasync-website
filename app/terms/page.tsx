@@ -1,4 +1,21 @@
 import Navigation from '../../components/Navigation';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Terms of Service - LunaSync AI Women\'s Health App',
+  description: 'Terms of Service for LunaSync, the AI-powered women\'s health app that combines period tracking, nutrition planning, and fitness coaching in one platform.',
+  keywords: 'LunaSync terms of service, women\'s health app terms, period tracker terms, AI health app legal, fitness app terms',
+  openGraph: {
+    title: 'LunaSync Terms of Service',
+    description: 'Terms of Service for LunaSync AI-powered women\'s health app.',
+    url: 'https://lunasync.app/terms',
+    siteName: 'LunaSync',
+    type: 'website',
+  },
+  alternates: {
+    canonical: 'https://lunasync.app/terms',
+  },
+};
 
 export default function Terms() {
   return (
